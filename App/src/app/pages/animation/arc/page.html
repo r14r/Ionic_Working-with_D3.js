@@ -1,0 +1,17 @@
+<ion-header>
+	<common-header>D3.js with Ionic</common-header>
+</ion-header>
+
+<ion-content>
+	<ion-button (click)="step()">Step</ion-button>
+	<ion-button (click)="start()">Start</ion-button>
+	<ion-button (click)="stop()">Stop</ion-button>
+	<ion-button (click)="resume()">Resume</ion-button>
+
+	<div>
+		<svg id='playground' width="100%" height="220">
+			<g transform="translate(300, 110)"></g>
+		</svg>
+	</div>
+
+</ion-content>

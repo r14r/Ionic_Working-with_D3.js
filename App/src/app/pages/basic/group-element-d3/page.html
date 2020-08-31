@@ -1,0 +1,79 @@
+<ion-header>
+	<common-header>D3.js with Ionic</common-header>
+</ion-header>
+
+<ion-content>
+
+	<h1 class="ion-no-margin margin-bottom">Group Element (D3)</h1>
+
+
+	<h2 class="ion-margin-bottom">4 SVG basic shape elements with D3.js</h2>
+	<div class="ion-padding-horizontal ion-padding-bottom">
+		<p>Add an SVG Group Element to the defined SVG Container then add the shapes into this container.</p>
+		<div id="svg-element" class="svg-element"></div>
+	</div>
+
+	<h2 class="ion-margin-bottom">Transforming SVG Elements Together with D3.js</h2>
+
+	<div class="ion-padding-horizontal ion-padding-bottom">
+		<h3 class="ion-no-padding">Translate</h3>
+		<div class="svg-element" id="svg-element-transform-translate" data-transformations='[{
+                "group":"circles",
+                "properties": [
+                    "translate( 80, 0 )"
+                ]}]'>
+		</div>
+
+		<h3 class="ion-no-padding">Scale</h3>
+		<div class="svg-element" id="svg-element-transform-scale" data-transformations='[{
+                "group": "circles",
+                "properties": [
+                    "scale( 2, 1 )"
+                ]}, {
+                "group": "rectangles",
+                "properties": [
+                    "scale( 0.5 )"
+                ]}
+            ]'>
+		</div>
+
+		<h3 class="ion-no-padding">Skew</h3>
+		<textarea ion-prism="javascript">
+            circleGroup.attr('transform', 'skewX( 20 )');
+            rectangleGroup.attr('transform', 'skewY( 8 )');
+        </textarea>
+		<div class="svg-element" id="svg-element-transform-skew" data-transformations='[{
+                "group":"circles",
+                "properties": [
+                    "skewX( 20 )"
+                ]}, {
+                "group": "rectangles",
+                "properties": [
+                    "skewY( 8 )"
+                ]}
+            ]'>
+		</div>
+
+		<h3 class="ion-no-padding">Matrix</h3>
+		<div class="svg-element" id="svg-element-transform-matrix" data-transformations='[{
+                "group":"circles",
+                "properties": [
+                    "matrix( 1, 2, 3, 4, 5, 6 )"
+                ]}
+            ]'>
+		</div>
+
+		<h3 class="ion-no-padding">Rotate</h3>
+		<div class="svg-element" id="svg-element-transform-rotate" data-transformations='[{
+                "group":"circles",
+                "properties": [
+                    "rotate( 45, 50, 50 )"
+                ]}, {
+                "group": "rectangles",
+                "properties": [
+                    "rotate( -5 )"
+                ]}
+            ]'>
+		</div>
+	</div>
+</ion-content>

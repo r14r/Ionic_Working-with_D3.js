@@ -1,0 +1,43 @@
+$content-padding: 16px;
+$content-margin: 16px;
+$heading-padding: 8px;
+$font-family-base: "Barlow", sans-serif;
+
+.prism {
+	user-select: text;
+}
+
+svg {
+	border: 1px solid white; // var(--ion-color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	color: var(--ion-color-primary);
+	font-family: "Hind Madurai", sans-serif;
+}
+
+h1 {
+	background: var(--ion-color-primary);
+	color: var(--ion-color-light);
+	text-align: center;
+	padding: $content-padding $heading-padding;
+}
+h2 {
+	border-top: 2px solid var(--ion-color-primary);
+	border-bottom: 2px solid var(--ion-color-primary);
+	padding: $heading-padding $content-padding;
+}
+
+h3,
+h5,
+h6 {
+	font-family: $font-family-base;
+	font-weight: bold;
+	padding: $heading-padding $content-padding;
+}

@@ -1,0 +1,7 @@
+{
+	"appId": "de.viainternet.ios.ionic.workingwithd3js",
+	"appName": "working-with-d3js",
+	"bundledWebRuntime": false,
+	"npmClient": "yarn",
+	"webDir": "www"
+}

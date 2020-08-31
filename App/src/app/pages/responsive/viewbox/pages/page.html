@@ -1,0 +1,39 @@
+<ion-header>
+	<common-header>D3.js with Ionic</common-header>
+</ion-header>
+
+<ion-content>
+	<div id="playground">
+
+		<h1>NOT responsive</h1>
+		<div class="row">
+			<div class="one">
+				<svg width="1000" height="200"></svg>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="one">
+				<svg width="200" height="200"></svg>
+			</div>
+			<div class="two">
+				<svg width="400" height="200"></svg>
+			</div>
+		</div>
+
+		<h1>Responsive 1</h1>
+		<div class="row">
+			<div class="one">
+				<svg width="1000" height="200" viewBox="0 0 1000 200"></svg>
+			</div>
+		</div>
+
+		<h1>Responsive 2</h1>
+		<div class="row">
+			<div class="one">
+				<!-- width should be five times more that height -->
+				<svg ratio="5 1"></svg>
+			</div>
+		</div>
+	</div>
+</ion-content>

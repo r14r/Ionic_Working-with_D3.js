@@ -1,0 +1,64 @@
+<ion-header>
+	<common-header>D3.js with Ionic</common-header>
+</ion-header>
+
+<ion-content>
+	<h1 class="ion-no-margin">Demo 1</h1>
+	<ion-button (click)="demo1_set_background()">Background</ion-button>
+	<ion-button (click)="demo1_init()">Init</ion-button>
+	<ion-button (click)="demo1()">Run</ion-button>
+
+	<div>
+		<svg id="svg" width="960px" height="400px">
+			<rect id="playground1" x="10" y="200" width="200" height="30" stroke="black" fill="#69b3a2"
+				stroke-width="1" />
+		</svg>
+	</div>
+
+	<h1 class="ion-no-margin">Demo 2: Trigger transition with a button</h1>
+	<ion-button (click)="demo2()">Run</ion-button>
+
+	<div>
+		<svg width="960px" height="400px">
+			<rect id="playground2" x="10" y="200" width="200" height="30" stroke="black" fill="#69b3a2"
+				stroke-width="1" />
+		</svg>
+	</div>
+
+	<h1 class="ion-no-margin">Demo 3: Piping transitions</h1>
+	<button onclick="demo3()">Run</button>
+
+	<div>
+		<svg width="960px" height="400px">
+			<rect id="playground3" x="10" y="200" width="200" height="30" stroke="black" fill="#69b3a2"
+				stroke-width="1" />
+		</svg>
+	</div>
+
+	<h1 class="ion-no-margin">Demo 4: Adding delay between elements</h1>
+	<button onclick="demo4_init()">Init</button>
+	<button onclick="demo4()">Run</button>
+
+	<div>
+		<svg width="960px" height="400px">
+			<rect id="playground4" x="10" y="200" width="200" height="30" stroke="black" fill="#69b3a2"
+				stroke-width="1" />
+		</svg>
+	</div>
+
+	<h1 class="ion-no-margin">Demo 5: Axis Transition</h1>
+	<button onclick="demo5_init()">Init</button>
+	<button onclick="demo5()">Run</button>
+
+	<div>
+		<svg width="960px" height="400px">
+			<rect id="playground5" x="10" y="200" width="200" height="30" stroke="black" fill="#69b3a2"
+				stroke-width="1" />
+		</svg>
+	</div>
+
+
+
+
+
+</ion-content>
