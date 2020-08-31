@@ -30,3 +30,4 @@ npm-debug.log*
 /plugins
 /www
 fork-d3js_ionic
+.env
